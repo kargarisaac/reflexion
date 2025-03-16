@@ -44,14 +44,20 @@ The agent has shown effectiveness in tasks such as:
 ## Installation
 
 ```bash
-# Install from PyPI
-pip install smolagents
-
-# Or install from source
-git clone https://kargarisaac/reflexion.git
+# Clone the repository
+git clone https://github.com/kargarisaac/reflexion.git
 cd reflexion
-pip install -e .
+
+# Install using Poetry
+poetry install
+
+# Activate the virtual environment
+poetry shell
 ```
+
+## API Keys
+
+This project uses the Gemini API. The API key is stored in the `.env` file at the root of the project. You can find the existing API key there or replace it with your own.
 
 ## Usage
 
@@ -63,7 +69,7 @@ from smolagents import ReflexionAgent, LiteLLMModel, DuckDuckGoSearchTool
 # Initialize the model
 model = LiteLLMModel(
     model_id="gemini/gemini-2.0-flash",
-    api_key="your-api-key",
+    api_key="your-api-key",  # Or load from .env file
     temperature=0.7,
     max_tokens=1000,
 )
