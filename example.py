@@ -13,7 +13,8 @@ load_dotenv()
 # Add the repository root to the path to ensure imports work correctly
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-from smolagents import ReflexionAgent, LiteLLMModel, DuckDuckGoSearchTool, Tool
+from smolagents import LiteLLMModel, DuckDuckGoSearchTool
+from reflexion import ReflexionAgent
 
 console = Console()
 
