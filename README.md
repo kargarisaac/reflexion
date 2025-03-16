@@ -2,6 +2,8 @@
 
 A Python implementation of the Reflexion framework for language agents with verbal reinforcement learning.
 
+![Reflexion Framework](images/image.png)
+
 ## Overview
 
 ReflexionAgent is based on the paper ["Reflexion: Language Agents with Verbal Reinforcement Learning"](https://arxiv.org/abs/2303.11366) by Noah Shinn et al. (NeurIPS 2023). This implementation provides a powerful agent that can learn from its mistakes through verbal self-reflection, improving its performance over multiple trials without requiring model fine-tuning.
