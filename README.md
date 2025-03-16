@@ -48,7 +48,7 @@ The agent has shown effectiveness in tasks such as:
 pip install smolagents
 
 # Or install from source
-git clone https://github.com/yourusername/reflexion.git
+git clone https://kargarisaac/reflexion.git
 cd reflexion
 pip install -e .
 ```
